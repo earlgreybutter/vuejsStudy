@@ -1,21 +1,19 @@
 <template>
   <div id="app">
   <Header/>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view/>
   <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/common/Header.vue'
-import HelloWorld from './components/HelloWorld.vue'
 import Footer from './components/common/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    HelloWorld,
     Footer
   }
 }
